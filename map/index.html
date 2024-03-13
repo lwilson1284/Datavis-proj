@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map of GA Counties</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Map of GA Counties</h1>
+    <div id="title"></div>
+    <div id="map"></div>
+    <div class="slider-container">
+        <div class="slider-label">Housing</div>
+        <input class="slider" type="range" min="0" max="10" value="0" step="1">
+        <div class="slider-value">0</div>
+    </div>
+    <div class="slider-container">
+        <div class="slider-label">Education</div>
+        <input class="slider" type="range" min="0" max="10" value="0" step="1">
+        <div class="slider-value">0</div>
+    </div>
+    <div class="slider-container">
+        <div class="slider-label">Weather</div>
+        <input class="slider" type="range" min="0" max="10" value="0" step="1">
+        <div class="slider-value">0</div>
+    </div>
+    <div class="slider-container">
+        <div class="slider-label">Crime Rate</div>
+        <input class="slider" type="range" min="0" max="10" value="0" step="1">
+        <div class="slider-value">0</div>
+    </div>
+    <script src="script.js"></script>
+    <div id="tooltip"></div>
+    <script>
+        const sliders = document.querySelectorAll('.slider');
+        const sliderValues = document.querySelectorAll('.slider-value');
+        
+        sliders.forEach((slider, index) => {
+            slider.addEventListener('input', () => {
+                sliderValues[index].textContent = slider.value;
+            });
+        });
+    </script>
+</body>
+</html>
