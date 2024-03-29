@@ -18,19 +18,19 @@ h1 {
 .slider-label {
     flex: 1;
     font-weight: bold;
-    margin-left: 700px;
-    color: #666;
+    margin-left: 500px;
+    color: #333;
 }
 
 .slider {
-    flex: 8;
+    flex: 10;
     margin: 0 0 px;
 }
 
 .slider-value {
     font-weight: bold;
-    margin-right: 700px;
-    color: #666;
+    margin-right: 500px;
+    color: #333;
 }
 
 #map {
