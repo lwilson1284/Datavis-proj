@@ -5,14 +5,14 @@ const sliderValues = document.querySelectorAll('.slider-value');
 const selectedValues = document.getElementById('selected-values');
 
 const housePrice = document.getElementById('housePrice');
-const testScores = document.getElementById('testScores');
-const weather = document.getElementById('weather');
-const crimeRate = document.getElementById('crimeRate');
+const satScores = document.getElementById('satScores');
+const hopeEligibilty = document.getElementById('hopeEligibilty');
+const graduationRate = document.getElementById('graduationRate');
 
 const housePriceOut = document.getElementById('housePriceOut');
-const testScoresOut = document.getElementById('testScoresOut');
-const weatherOut = document.getElementById('weatherOut');
-const crimeRateOut = document.getElementById('crimeRateOut');
+const satScoresOut = document.getElementById('satScoresOut');
+const hopeEligibilityOut = document.getElementById('hopeEligibilityOut');
+const graduationRateOut = document.getElementById('graduationRateOut');
 
 
 
@@ -73,9 +73,11 @@ function fetchHousingData() {
 
             data.forEach(row => {
                 const rowElement = document.createElement('div');
+
+                const roundedHousePrice = parseFloat(row.March292024).toFixed(2);
                
                 if (parseInt(row.March292024) < parseInt(housePrice.value)) {
-                    rowElement.textContent = `ZipCode: ${row.RegionName}, City: ${row.City}, House Price : ${row.March292024}`;
+                    rowElement.textContent = `ZipCode: ${row.RegionName}, City: ${row.City}, County: ${row.CountyName}, House Price: $${row.March292024}`;
                     container.appendChild(rowElement);
                 }
             
@@ -99,8 +101,8 @@ function fetchSchoolData() {
                 const rowElement = document.createElement('div');
                 
                 
-                if (parseInt(row.SAT_AVG_SCORE) > parseInt(testScores.value)) {
-                    rowElement.textContent = `School: ${row.INSTN_NAME_x}, County: ${row.SCHOOL_DSTRCT_NM_SAT}, SAT Score : ${row.SAT_AVG_SCORE}`;
+                if (parseInt(row.SAT_AVG_SCORE) > parseInt(satScores.value) && parseInt(row.HOPE_ELIGIBLE_PCT) > parseInt(hopeEligibilty.value) && parseInt(row.PROGRAM_PERCENT) > parseInt(graduationRate.value)) {
+                    rowElement.textContent = `${row.INSTN_NAME_x}, County: ${row.SCHOOL_DSTRCT_NM_SAT}, SAT Score : ${row.SAT_AVG_SCORE}, Hope Elegibility: ${row.HOPE_ELIGIBLE_PCT}%, Graduation Rate: ${row.PROGRAM_PERCENT}%`;
                     container2.appendChild(rowElement);
                 }
             
@@ -117,6 +119,7 @@ window.addEventListener('load', fetchHousingData);
 housePrice.addEventListener('input', fetchHousingData);
 
 window.addEventListener('load', fetchSchoolData);
-testScores.addEventListener('input', fetchSchoolData);
-
+satScores.addEventListener('input', fetchSchoolData);
+hopeEligibilty.addEventListener('input', fetchSchoolData);
+graduationRate.addEventListener('input', fetchSchoolData);
 
