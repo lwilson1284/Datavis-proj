@@ -5,33 +5,37 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
+    
     <style>
 
     </style>
 </head>
 <body>
+   
+
+
     <h1>Map of GA Counties</h1>
     <div id="title"></div>
     <div id="map"></div>
     <div class="slider-container">
         <div class="slider-label">House Price</div>
-        <input class="slider" type="range" min="0" max="10" value="0" step="1">
-        <div class="slider-value">0</div>
+        <input class="slider" id = "housePrice" type="range" min="0" max="1000000" value="0" step="1"data-label="House Price">
+        <div id="housePriceOut" class="slider-value">0</div>
     </div>
     <div class="slider-container">
         <div class="slider-label">Test Scores</div>
-        <input class="slider" type="range" min="0" max="10" value="0" step="1">
-        <div class="slider-value">0</div>
+        <input class="slider" id = "testScores" type="range" min="0" max="1600" value="0" step="1"data-label="Test Scores">
+        <div id="testScoresOut" class="slider-value">0</div>
     </div>
     <div class="slider-container">
         <div class="slider-label">Weather</div>
-        <input class="slider" type="range" min="0" max="10" value="0" step="1">
-        <div class="slider-value">0</div>
+        <input class="slider" id = "weather" type="range" min="0" max="10" value="0" step="1"data-label="Weather">
+        <div  id="weatherOut" class="slider-value">0</div>
     </div>
     <div class="slider-container">
         <div class="slider-label">Crime Rate</div>
-        <input class="slider" type="range" min="0" max="10" value="0" step="1">
-        <div class="slider-value">0</div>
+        <input class="slider" id = "crimeRate" type="range" min="0" max="10" value="0" step="1"data-label="Crime Rate">
+        <div id = "crimeRateOut" class="slider-value">0</div>
     </div>
     <script src="script.js"></script>
     <div id="tooltip"></div>
@@ -44,6 +48,11 @@
                 sliderValues[index].textContent = slider.value;
             });
         });
+        
     </script>
+    <div id="data-container"></div>
+    <div id="data-container2"></div>
+   
+
 </body>
 </html>
