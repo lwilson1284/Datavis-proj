@@ -1,58 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Map of GA Counties</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
-    
-    <style>
-
-    </style>
 </head>
 <body>
-   
-
-
     <h1>Map of GA Counties</h1>
-    <div id="title"></div>
     <div id="map"></div>
-    <div class="slider-container">
-        <div class="slider-label">House Price</div>
-        <input class="slider" id = "housePrice" type="range" min="60000" max="5000000" value="60000" step="25000"data-label="House Price">
-        <div id="housePriceOut" class="slider-value">60000</div>
-    </div>
-    <div class="slider-container">
-        <div class="slider-label">SAT Scores</div>
-        <input class="slider" id = "satScores" type="range" min="400" max="1600" value="400" step="10" data-label="Sat Scores">
-        <div id="satScoresOut" class="slider-value">400</div>
-    </div>
-    <div class="slider-container">
-        <div class="slider-label">Hope Eligibilty</div>
-        <input class="slider" id = "hopeEligibilty" type="range" min="0" max="100" value="0" step="5"data-label="Hope Eligibilty">
-        <div  id="hopeEligibilityOut" class="slider-value">0</div>
-    </div>
-    <div class="slider-container">
-        <div class="slider-label">Graduation Rate</div>
-        <input class="slider" id = "graduationRate" type="range" min="40" max="100" value="40" step="1"data-label="Graduation Rate">
-        <div id = "graduationRateOut" class="slider-value">40</div>
-    </div>
-    <script src="script.js"></script>
-    <div id="tooltip"></div>
-    <script>
-        const sliders = document.querySelectorAll('.slider');
-        const sliderValues = document.querySelectorAll('.slider-value');
-        
-        sliders.forEach((slider, index) => {
-            slider.addEventListener('input', () => {
-                sliderValues[index].textContent = slider.value;
-            });
-        });
-        
-    </script>
-    <div id="data-container"></div>
-    <div id="data-container2"></div>
-   
+    <button id="showSchoolsBtn" onclick="showSchools()">Show Schools</button>
 
+    <div class="slider-container">
+        <label class="slider-label" for="housePrice">House Price</label>
+        <input class="slider" id="housePrice" type="range" min="60000" max="5000000" value="60000" step="25000" data-label="House Price">
+        <span id="housePriceOut" class="slider-value">60000</span>
+    </div>
+    <div class="slider-container">
+        <label class="slider-label" for="satScores">SAT Scores</label>
+        <input class="slider" id="satScores" type="range" min="400" max="1600" value="400" step="10" data-label="Sat Scores">
+        <span id="satScoresOut" class="slider-value">400</span>
+    </div>
+    <div class="slider-container">
+        <label class="slider-label" for="hopeEligibilty">Hope Eligibility</label>
+        <input class="slider" id="hopeEligibilty" type="range" min="0" max="100" value="0" step="5" data-label="Hope Eligibility">
+        <span id="hopeEligibilityOut" class="slider-value">0</span>
+    </div>
+    <div class="slider-container">
+        <label class="slider-label" for="graduationRate">Graduation Rate</label>
+        <input class="slider" id="graduationRate" type="range" min="40" max="100" value="40" step="1" data-label="Graduation Rate">
+        <span id="graduationRateOut" class="slider-value">40</span>
+    </div>
+
+    <button onclick="showTable('housing')">Housing Data</button>
+    <button onclick="showTable('school')">School Data</button>
+
+    <div id="data-container" style="display:none;"></div>
+    <div id="data-container2" style="display:none;"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>

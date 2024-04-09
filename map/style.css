@@ -6,41 +6,64 @@ body {
 h1 {
     text-align: center;
     color: #333;
-    padding: 20px 0;
 }
 
 .slider-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .slider-label {
-    flex: 1;
-    font-weight: bold;
-    margin-left: 500px;
-    color: #333;
-}
-
-.slider {
-    flex: 10;
-    margin: 0 0 px;
+    margin-right: 10px;
 }
 
 .slider-value {
-    font-weight: bold;
-    margin-right: 500px;
-    color: #333; 
+    margin-left: 10px;
 }
 
 #map {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 630px;
-    background-color: #DADADA;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    margin-bottom: 20px;
+    height: 600px;
+    margin: 20px 0;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    background-color: #fff;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a9bd4; /* Lighter blue */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a8bc2; /* Slightly darker blue for hover effect */
+}
+
+button.active {
+    background-color: #2f5a91; /* Dark blue when active */
+}
+

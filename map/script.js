@@ -2,124 +2,168 @@ const width = 960;
 const height = 600;
 const sliders = document.querySelectorAll('.slider');
 const sliderValues = document.querySelectorAll('.slider-value');
-const selectedValues = document.getElementById('selected-values');
 
 const housePrice = document.getElementById('housePrice');
 const satScores = document.getElementById('satScores');
 const hopeEligibilty = document.getElementById('hopeEligibilty');
 const graduationRate = document.getElementById('graduationRate');
 
-const housePriceOut = document.getElementById('housePriceOut');
-const satScoresOut = document.getElementById('satScoresOut');
-const hopeEligibilityOut = document.getElementById('hopeEligibilityOut');
-const graduationRateOut = document.getElementById('graduationRateOut');
-
-
-
 const svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
 const projection = d3.geoAlbersUsa();
+const path = d3.geoPath().projection(projection);
 
-const path = d3.geoPath()
-    .projection(projection);
+function initMap() {
+    d3.json("../data/usa-counties.json").then(us => {
+        const georgiaCounties = topojson.feature(us, us.objects.USAdrop1).features
+            .filter(d => d.properties.CoState.endsWith("Georgia"));
 
-d3.json("../data/usa-counties.json").then(us => {
-    const georgiaCounties = topojson.feature(us, us.objects.USAdrop1).features
-        .filter(d => d.properties.CoState.endsWith("Georgia")); // Filter by Georgia
+        projection.fitSize([width, height], {type: "FeatureCollection", features: georgiaCounties});
 
-    // scale up the Georgia counties
-    projection.fitSize([width, height], {type: "FeatureCollection", features: georgiaCounties});
-
-    svg.append("g")
-      .selectAll("path")
-      .data(georgiaCounties)
-      .join("path")
-        .attr("d", path)
-        .style("fill", "lightblue") // background fill
-        .style("stroke", "#31708f") // county line color
-        .style("stroke-width", "1px");
-});
-function updateSliderValue(index, value) {
-    sliderValues[index].textContent = value;
+        svg.append("g")
+          .selectAll("path")
+          .data(georgiaCounties)
+          .join("path")
+            .attr("d", path)
+            .style("fill", "lightblue")
+            .style("stroke", "#31708f")
+            .style("stroke-width", "1px");
+    });
 }
 
-
-function displaySelectedValues() {
-    let values = '';
-    sliders.forEach((slider, index) => {
-        values += `${slider.dataset.label}: ${slider.value}, `;
-    });
-
-    selectedValues.textContent = values.slice(0, -2); 
-}
-sliders.forEach((slider, index) => {
-    slider.addEventListener('input', () => {
-    
-        updateSliderValue(index, slider.value);
-        displaySelectedValues();
-    });
-});
 function fetchHousingData() {
     fetch('../cleaned_housing_data.csv')
         .then(response => response.text())
         .then(csvData => {
             const data = d3.csvParse(csvData);
-
             const container = document.getElementById('data-container');
             container.innerHTML = '';
-            container.append("Houses");
+
+            const table = document.createElement('table');
+            const headerRow = table.insertRow();
+            ['ZipCode', 'City', 'County', 'House Price'].forEach(headerText => {
+                const headerCell = document.createElement('th');
+                headerCell.textContent = headerText;
+                headerRow.appendChild(headerCell);
+            });
 
             data.forEach(row => {
-                const rowElement = document.createElement('div');
-
-                const roundedHousePrice = parseFloat(row.March292024).toFixed(2);
-               
-                if (parseInt(row.March292024) < parseInt(housePrice.value)) {
-                    rowElement.textContent = `ZipCode: ${row.RegionName}, City: ${row.City}, County: ${row.CountyName}, House Price: $${row.March292024}`;
-                    container.appendChild(rowElement);
+                if (parseInt(row.March292024) <= parseInt(housePrice.value)) {
+                    const rowElement = table.insertRow();
+                    [row.RegionName, row.City, row.CountyName, `$${row.March292024}`].forEach(cellText => {
+                        const cell = rowElement.insertCell();
+                        cell.textContent = cellText;
+                    });
                 }
-            
             });
+
+            container.appendChild(table);
         })
         .catch(error => {
             console.error('Error fetching CSV data:', error);
         });
 }
+
 function fetchSchoolData() {
+    // This function should be similar to fetchHousingData but for school data
+    // Placeholder logic is provided here, needs to be implemented similarly
     fetch('../school_data.csv')
         .then(response => response.text())
         .then(csvData => {
             const data = d3.csvParse(csvData);
+            const container = document.getElementById('data-container2');
+            container.innerHTML = '';
 
-            const container2 = document.getElementById('data-container2');
-            container2.innerHTML = '';
-            container2.append("School");
+            const table = document.createElement('table');
+            const headerRow = table.insertRow();
+            ['Institution Name', 'County', 'SAT Score', 'Hope Eligibility', 'Graduation Rate'].forEach(headerText => {
+                const headerCell = document.createElement('th');
+                headerCell.textContent = headerText;
+                headerRow.appendChild(headerCell);
+            });
 
             data.forEach(row => {
-                const rowElement = document.createElement('div');
-                
-                
-                if (parseInt(row.SAT_AVG_SCORE) > parseInt(satScores.value) && parseInt(row.HOPE_ELIGIBLE_PCT) > parseInt(hopeEligibilty.value) && parseInt(row.PROGRAM_PERCENT) > parseInt(graduationRate.value)) {
-                    rowElement.textContent = `${row.INSTN_NAME_x}, County: ${row.SCHOOL_DSTRCT_NM_SAT}, SAT Score : ${row.SAT_AVG_SCORE}, Hope Elegibility: ${row.HOPE_ELIGIBLE_PCT}%, Graduation Rate: ${row.PROGRAM_PERCENT}%`;
-                    container2.appendChild(rowElement);
+                if (parseInt(row.SAT_AVG_SCORE) >= parseInt(satScores.value)) {
+                    const rowElement = table.insertRow();
+                    [row.INSTN_NAME_x, row.SCHOOL_DSTRCT_NM_SAT, row.SAT_AVG_SCORE, `${row.HOPE_ELIGIBLE_PCT}%`, `${row.PROGRAM_PERCENT}%`].forEach(cellText => {
+                        const cell = rowElement.insertCell();
+                        cell.textContent = cellText;
+                    });
                 }
-            
-
-                
             });
+
+            container.appendChild(table);
         })
         .catch(error => {
             console.error('Error fetching CSV data:', error);
         });
 }
 
-window.addEventListener('load', fetchHousingData);
-housePrice.addEventListener('input', fetchHousingData);
+function showTable(type) {
+    document.getElementById('data-container').style.display = type === 'housing' ? 'block' : 'none';
+    document.getElementById('data-container2').style.display = type === 'school' ? 'block' : 'none';
+}
 
-window.addEventListener('load', fetchSchoolData);
-satScores.addEventListener('input', fetchSchoolData);
-hopeEligibilty.addEventListener('input', fetchSchoolData);
-graduationRate.addEventListener('input', fetchSchoolData);
+sliders.forEach(slider => {
+    slider.addEventListener('input', () => {
+        const sliderId = slider.getAttribute('id');
+        const sliderOut = document.getElementById(`${sliderId}Out`);
+        sliderOut.textContent = slider.value;
 
+        if (sliderId === 'housePrice') {
+            fetchHousingData();
+        } else if (sliderId === 'satScores' || sliderId === 'hopeEligibilty' || sliderId === 'graduationRate') {
+            fetchSchoolData();
+        }
+    });
+});
+
+function loadSchoolLocations() {
+    d3.csv("../data/school_coords.csv").then(data => {
+        const schoolsGroup = svg.append("g").attr("class", "schools");
+
+        schoolsGroup.selectAll("image")
+            .data(data)
+            .enter()
+            .append("image")
+            .attr("xlink:href", "../school-icon.png") 
+            .attr("width", 20)
+            .attr("height", 20)
+            .attr("transform", d => {
+                const coords = projection([+d.Longitude, +d.Latitude]);
+                return `translate(${coords[0] - 10}, ${coords[1] - 10})`;
+            });
+    });
+}
+
+function showSchools() {
+    const schoolsGroup = svg.select(".schools");
+    const button = document.getElementById('showSchoolsBtn');
+
+    if (schoolsGroup.empty()) {
+        loadSchoolLocations();
+        button.classList.add('active');
+    } else {
+        const isVisible = schoolsGroup.style("display") !== "none";
+        schoolsGroup.style("display", isVisible ? "none" : "block");
+        
+        if (isVisible) {
+            button.classList.remove('active');
+        } else {
+            button.classList.add('active');
+        }
+    }
+
+    document.getElementById('data-container').style.display = 'none';
+    document.getElementById('data-container2').style.display = 'block';
+}
+
+
+
+window.addEventListener('load', () => {
+    initMap();
+    fetchHousingData();
+    fetchSchoolData();
+});
