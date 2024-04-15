@@ -1,217 +1,144 @@
 INSTN_NUMBER,INSTN_NAME_x,SCHOOL_DSTRCT_NM_SAT,SCHOOL_DISTRCT_CD,SAT_AVG_SCORE,ACT_AVG_SCORE,HOPE_ELIGIBLE_PCT,ENROLLMENT_COUNT,PROGRAM_PERCENT
-100,Chapel Hill High School,Douglas County,648,960.00,19.30,35.17,338.63,87.07
+100,Chapel Hill High School,Douglas County,648,960,19.3,35.17,338.63,87.07
 101,Apalachee High School,Barrow County,607,1020.93,19.71,50.38,372.18,90.18
 102,Cedar Shoals High School,Clarke County,629,996.67,19.33,47.23,299.17,82.75
 103,Appling County High School,Appling County,601,991.67,19.58,51.12,325.98,89.45
 104,Classic City High School,Clarke County,629,940.33,18.65,40.93,259.73,87.76
 105,Baker County K12 School,Baker County,604,1001.92,19.36,49.04,312.94,87.84
-106,Berrien Academy Performance Learning Center,Berrien County,610,1023.00,20.72,56.64,338.52,91.01
-107,Pepperell High School,Floyd County,657,1074.33,21.27,51.56,599.00,94.12
-108,Jasper County High School,Savannah-Chatham County,679,959.00,18.65,35.78,286.17,67.15
-109,Heritage High School,Catoosa County,623,1081.00,21.00,59.59,526.00,90.15
-110,Brooks County High School,Brooks County,614,1000.80,18.48,48.22,134.85,90.50
-111,Cook High School,Cook County,637,1024.40,20.18,52.56,289.53,92.18
-112,Grovetown High School,Colquitt County,636,1034.00,19.90,48.29,292.56,91.23
+107,Pepperell High School,Floyd County,657,1074.33,21.27,51.56,599,94.12
+108,Jasper County High School,Savannah-Chatham County,679,959,18.65,35.78,286.17,67.15
+109,Heritage High School,Catoosa County,623,1081,21,59.59,526,90.15
+110,Brooks County High School,Brooks County,614,1000.8,18.48,48.22,134.85,90.5
+111,Cook High School,Cook County,637,1024.4,20.18,52.56,289.53,92.18
+112,Grovetown High School,Colquitt County,636,1034,19.9,48.29,292.56,91.23
 113,Calhoun County High School,Calhoun County,619,,,29.27,41.13,88.65
 114,Cass High School,Bartow County,608,1049.67,19.77,52.94,220.63,93.67
-115,Bleckley County Success Academy,Savannah-Chatham County,612,993.33,18.10,58.23,349.08,90.82
-116,New Beginning Learning Center,Houston County,643,,,,,62.23
-117,New Hampstead High School,Savannah-Chatham County,625,922.00,,32.81,345.00,93.12
-118,Hapeville Charter Career Academy,Fulton County,660,919.50,15.50,36.69,165.75,92.02
-119,Cambridge High School,Fulton County,660,1137.00,24.10,74.60,435.13,95.90
-120,Georgia Cyber Academy (Virtual),State Charter Schools- Georgia Cyber Academy,7820120,,,43.19,,63.29
-172,Cedar Grove High School,DeKalb County,644,905.00,15.40,29.41,276.00,77.10
-173,Newton High School,Newton County,707,928.00,17.30,43.73,615.13,90.87
-174,Jefferson High School,Jefferson City,779,1088.00,19.80,67.24,302.50,95.51
+117,New Hampstead High School,Savannah-Chatham County,625,922,,32.81,345,93.12
+119,Cambridge High School,Fulton County,660,1137,24.1,74.6,435.13,95.9
+172,Cedar Grove High School,DeKalb County,644,905,15.4,29.41,276,77.1
+173,Newton High School,Newton County,707,928,17.3,43.73,615.13,90.87
+174,Jefferson High School,Jefferson City,779,1088,19.8,67.24,302.5,95.51
 175,Walton High School,Cobb County,633,1049.25,21.13,54.64,379.16,88.28
 176,Etowah High School,Cherokee County,628,970.75,18.63,46.83,393.41,86.88
-177,Rabun County High School,Rabun County,719,1038.00,,52.67,160.88,96.30
-182,Richmond Hill High School,Bryan County,615,1019.50,20.47,51.79,442.54,92.12
-183,Baker County Learning Academy,Columbia County,604,1026.00,18.90,53.05,303.13,86.43
-184,Mary Persons High School,Monroe County,702,1013.00,20.00,48.58,318.00,93.70
-185,Shiloh High School,Gwinnett County,667,960.00,16.70,41.53,542.75,76.38
-186,Central High School,Bibb County,611,946.50,17.50,43.18,285.56,90.68
-187,Alexander High School,Douglas County,648,969.00,18.57,41.02,489.88,83.98
-188,Pope High School,Cobb County,633,1143.00,24.80,72.63,451.88,94.57
-189,Baldwin High School,Baldwin County,605,1006.00,19.70,44.31,278.52,79.54
-190,Jackson High School,Butts County,618,999.80,20.16,47.63,395.40,89.92
-191,Sequoyah High School,Cherokee County,628,1067.60,22.26,59.87,464.95,90.50
-192,Harrison High School,Cobb County,633,1000.00,19.69,48.93,367.49,90.25
-193,Crawford County High School,Crawford County,639,1015.33,19.10,47.87,331.08,89.08
-194,Pike County High School,Pike County,714,1021.00,21.10,53.64,264.25,92.84
-195,Coffee County High School,Coffee County,634,1020.50,19.95,54.76,404.00,85.42
-196,Northgate High School,Coweta County,638,968.00,19.40,48.83,298.97,89.95
-197,Woodstock High School,Cherokee County,628,1061.25,21.30,55.79,395.53,91.26
-198,Woodland High School,Bartow County,608,1060.00,21.72,54.27,329.75,90.80
+177,Rabun County High School,Rabun County,719,1038,,52.67,160.88,96.3
+182,Richmond Hill High School,Bryan County,615,1019.5,20.47,51.79,442.54,92.12
+184,Mary Persons High School,Monroe County,702,1013,20,48.58,318,93.7
+185,Shiloh High School,Gwinnett County,667,960,16.7,41.53,542.75,76.38
+186,Central High School,Bibb County,611,946.5,17.5,43.18,285.56,90.68
+187,Alexander High School,Douglas County,648,969,18.57,41.02,489.88,83.98
+188,Pope High School,Cobb County,633,1143,24.8,72.63,451.88,94.57
+189,Baldwin High School,Baldwin County,605,1006,19.7,44.31,278.52,79.54
+190,Jackson High School,Butts County,618,999.8,20.16,47.63,395.4,89.92
+191,Sequoyah High School,Cherokee County,628,1067.6,22.26,59.87,464.95,90.5
+192,Harrison High School,Cobb County,633,1000,19.69,48.93,367.49,90.25
+193,Crawford County High School,Crawford County,639,1015.33,19.1,47.87,331.08,89.08
+194,Pike County High School,Pike County,714,1021,21.1,53.64,264.25,92.84
+195,Coffee County High School,Coffee County,634,1020.5,19.95,54.76,404,85.42
+196,Northgate High School,Coweta County,638,968,19.4,48.83,298.97,89.95
+197,Woodstock High School,Cherokee County,628,1061.25,21.3,55.79,395.53,91.26
+198,Woodland High School,Bartow County,608,1060,21.72,54.27,329.75,90.8
 199,Banks County High School,Banks County,606,1022.67,19.47,49.09,287.79,93.09
-201,Jenkins County High School,Jenkins County,682,976.00,18.40,47.54,99.81,89.41
-202,Lithonia High School,DeKalb County,644,981.00,18.35,46.42,350.75,84.71
+201,Jenkins County High School,Jenkins County,682,976,18.4,47.54,99.81,89.41
+202,Lithonia High School,DeKalb County,644,981,18.35,46.42,350.75,84.71
 203,Southeast Bulloch High School,Bulloch County,616,1119.33,23.03,62.37,381.63,96.16
-204,Rutland High School,Bibb County,611,948.00,,45.11,148.88,87.72
-205,Dooly County Prep Academy,Fulton County,646,999.75,20.77,56.84,290.53,90.44
-206,Chattahoochee County High School,Chattahoochee County,626,948.00,18.50,40.50,306.50,91.69
-207,Harpst Academy,,715,,,,,
-208,AZ Kelsey Academy,Griffin-Spalding County,726,,,,12.00,96.66
-209,Allatoona High School,Cobb County,633,1078.00,21.50,60.00,443.70,90.85
-210,The School of Liberal Studies at Savannah High,Savannah-Chatham County,625,837.00,,49.20,115.81,89.47
-211,Gordon Lee High School,Chickamauga City,769,986.00,18.10,54.39,118.31,95.84
-212,Mt. Zion High School,Carroll County,622,966.00,17.05,31.18,219.07,82.10
-213,Richmond County Technical Career Magnet School,Treutlen County,721,939.00,,65.44,,94.59
-214,Lambert High School,Forsyth County,658,1081.00,22.35,62.82,576.63,89.99
-215,Martha Ellen Stilwell School for the Performing Arts,Clayton County,631,1026.00,19.70,61.64,119.88,100.00
-273,Valdosta High School,Valdosta City,792,972.00,19.55,46.12,382.44,92.13
-275,Marion County Middle/High School,Marion County,696,979.00,18.90,53.00,365.88,87.49
-276,Stone Mountain High School,DeKalb County,644,871.00,16.00,35.12,293.13,74.10
-278,Shaw High School,Muscogee County,706,944.00,16.90,32.18,307.13,91.42
-282,Mitchell County High School,Mitchell County,701,855.00,,41.67,,92.93
-286,Northeast High School,Bibb County,611,945.00,20.40,43.96,201.31,92.71
-287,Charlton County High School,Charlton County,624,968.00,,59.79,109.88,98.23
-288,Burke County High School,Burke County,617,915.50,17.50,35.18,171.56,84.73
-290,Mount Zion High School,Clayton County,631,955.00,17.70,36.92,302.00,89.40
-291,Fitzgerald High School School College and Career Academy,Ben Hill County,609,912.00,18.00,38.65,322.63,90.87
-292,DAC (Dodge County Achievement Center),Paulding County,645,1012.00,19.00,39.69,474.88,82.00
-293,Oconee County High School,Oconee County,708,1120.00,22.60,75.62,309.63,91.44
-295,Camden County High School,Camden County,620,1027.33,19.40,43.27,480.00,86.10
-296,Zebulon High School,,714,,,,16.50,91.62
-299,Harris County High School,Harris County,672,1065.00,21.20,55.28,422.00,90.11
-300,Barrow Arts and Sciences Academy,Meriwether County,607,,14.20,47.75,148.00,92.50
-301,Trion High School,Trion City,791,1063.00,19.50,70.13,97.50,98.98
-302,Bacon County High School,Bacon County,603,952.00,,53.57,157.88,96.91
-303,Metter College and Career Academy,,621,,,,37.63,89.73
-307,Ola High School,Henry County,675,1058.00,20.60,41.15,437.38,92.27
-310,Fulton Leadership Academy,State Charter Schools II- Fulton Leadership Academy,7830310,,,,,94.51
-315,Tapestry Public Charter School,Henry County,644,894.00,15.90,40.56,257.50,82.71
-373,Sprayberry High School,Cobb County,633,1061.00,21.10,56.47,449.88,84.55
-377,Riverdale High School,Clayton County,631,904.00,15.70,35.74,324.25,85.68
-378,Perry Career Academy - Eula Wilburn Ponds Perry Center for Learning,Muscogee County,631,897.00,14.90,19.03,237.94,68.26
-381,Lassiter High School,Cobb County,633,1172.00,24.40,68.78,480.63,96.49
-386,Southwest High School,Bibb County,611,899.00,,21.13,191.38,51.91
-387,Troup County High School,Troup County,741,1009.00,19.70,32.47,330.13,88.14
-389,East Coweta High School,Coweta County,638,1040.00,19.90,49.75,790.50,87.80
-390,Effingham County High School,Effingham County,651,1074.00,21.10,37.73,520.38,87.93
-391,Cherokee Bluff High School,Henry County,669,939.00,15.70,45.29,346.50,93.08
-392,Hurricane Transition Academy,Fulton County,609,1195.00,25.30,68.09,462.25,80.73
-394,Delta Innovative School,,614,,,,,89.74
-397,Sumter County High School,,729,,,32.50,242.63,98.34
-398,Fayette County High School,Fayette County,656,1052.00,20.60,36.46,339.25,86.93
-400,"South Georgia Regional Achievement Center, The Phoenix",,647,,,,,
-401,Armuchee High School,Floyd County,657,1010.00,19.50,41.73,,88.81
-402,Lake Oconee Charter High School,,666,,,84.38,68.13,93.44
-405,Muscogee Youth Development Campus,,891,,,,,
-407,Dekalb Early College Academy,DeKalb County,644,1113.00,23.00,80.30,71.88,100.00
-408,Woodland High School,Henry County,675,967.00,18.30,41.94,331.13,87.68
-410,DeKalb School of the Arts,DeKalb County,644,1096.00,22.80,88.51,75.00,100.00
-411,Islands High School,Savannah-Chatham County,625,1025.00,22.20,50.25,212.13,92.48
-412,Moore Street Facility,State Charter Schools- Georgia Connections Academy,774,1015.00,21.00,47.17,,74.34
-415,Atlanta Classical Academy,,761,,,84.38,,100.00
-497,Stephenson High School,DeKalb County,644,891.00,16.30,30.60,335.13,72.03
-499,Savannah Arts Academy,Savannah-Chatham County,625,1160.00,25.50,75.42,224.75,98.68
-502,Bryan County High School,Bryan County,615,917.00,,61.25,151.13,91.97
-507,Youth Villages at Inner Harbour,,648,,,,,
-513,Savannah Early College High School,,625,,,69.44,36.25,100.00
-514,School of Humanities at Juliette Gordon Low,,625,,,,,
-515,Charles Drew Charter JA/SR Academy,Atlanta Public Schools,761,1007.00,19.50,59.35,,98.66
-516,Savannah Classical Academy Charter High School,,625,,,,20.83,95.21
-518,Savannah-Chatham E-Learning Academy,,625,,,30.30,,82.64
-598,Macon Youth Development Campus,,891,,,,,
-606,iGrad Virtual Academy School,,628,,,38.57,,91.66
-610,"Arabia Mountain High School - Academy of Engineering, Medicine and Environm",DeKalb County,644,989.00,18.90,69.44,291.50,98.66
-613,Foothills Charter High School (Central Office - Athens),State Charter Schools- Foothills Charter High School (Madison Campus),7820613,1029.00,,16.77,640.25,9.93
-616,Georgia School for Innovation and the Classics,,7820616,,,46.34,,95.03
-618,Coastal Plains Charter High School,,7820618,,,14.89,495.50,16.80
-623,Academy For Classical Education,,7830623,,,70.18,,99.30
-626,Furlow Charter School,,7830626,,,44.83,,82.99
-630,Baconton Community Charter School,,7830630,,,92.11,,95.54
-634,Georgia Fugees Academy Charter School,,7830634,,,,,
-691,Tri-Cities High School,Fulton County,660,878.00,16.70,32.11,357.75,83.97
-701,Alliance Academy for Innovation,,658,,,82.56,275.25,100.00
-702,Denmark High School,Forsyth County,658,,,70.87,612.50,92.30
+204,Rutland High School,Bibb County,611,948,,45.11,148.88,87.72
+206,Chattahoochee County High School,Chattahoochee County,626,948,18.5,40.5,306.5,91.69
+209,Allatoona High School,Cobb County,633,1078,21.5,60,443.7,90.85
+211,Gordon Lee High School,Chickamauga City,769,986,18.1,54.39,118.31,95.84
+212,Mt. Zion High School,Carroll County,622,966,17.05,31.18,219.07,82.1
+214,Lambert High School,Forsyth County,658,1081,22.35,62.82,576.63,89.99
+273,Valdosta High School,Valdosta City,792,972,19.55,46.12,382.44,92.13
+275,Marion County Middle/High School,Marion County,696,979,18.9,53,365.88,87.49
+276,Stone Mountain High School,DeKalb County,644,871,16,35.12,293.13,74.1
+278,Shaw High School,Muscogee County,706,944,16.9,32.18,307.13,91.42
+282,Mitchell County High School,Mitchell County,701,855,,41.67,,92.93
+286,Northeast High School,Bibb County,611,945,20.4,43.96,201.31,92.71
+287,Charlton County High School,Charlton County,624,968,,59.79,109.88,98.23
+288,Burke County High School,Burke County,617,915.5,17.5,35.18,171.56,84.73
+290,Mount Zion High School,Clayton County,631,955,17.7,36.92,302,89.4
+293,Oconee County High School,Oconee County,708,1120,22.6,75.62,309.63,91.44
+295,Camden County High School,Camden County,620,1027.33,19.4,43.27,480,86.1
+299,Harris County High School,Harris County,672,1065,21.2,55.28,422,90.11
+301,Trion High School,Trion City,791,1063,19.5,70.13,97.5,98.98
+307,Ola High School,Henry County,675,1058,20.6,41.15,437.38,92.27
+373,Sprayberry High School,Cobb County,633,1061,21.1,56.47,449.88,84.55
+377,Riverdale High School,Clayton County,631,904,15.7,35.74,324.25,85.68
+381,Lassiter High School,Cobb County,633,1172,24.4,68.78,480.63,96.49
+386,Southwest High School,Bibb County,611,899,,21.13,191.38,51.91
+387,Troup County High School,Troup County,741,1009,19.7,32.47,330.13,88.14
+389,East Coweta High School,Coweta County,638,1040,19.9,49.75,790.5,87.8
+390,Effingham County High School,Effingham County,651,1074,21.1,37.73,520.38,87.93
+391,Cherokee Bluff High School,Henry County,669,939,15.7,45.29,346.5,93.08
+398,Fayette County High School,Fayette County,656,1052,20.6,36.46,339.25,86.93
+401,Armuchee High School,Floyd County,657,1010,19.5,41.73,,88.81
+408,Woodland High School,Henry County,675,967,18.3,41.94,331.13,87.68
+411,Islands High School,Savannah-Chatham County,625,1025,22.2,50.25,212.13,92.48
+497,Stephenson High School,DeKalb County,644,891,16.3,30.6,335.13,72.03
+502,Bryan County High School,Bryan County,615,917,,61.25,151.13,91.97
+691,Tri-Cities High School,Fulton County,660,878,16.7,32.11,357.75,83.97
+702,Denmark High School,Forsyth County,658,,,70.87,612.5,92.3
 704,East Forsyth High School,Forsyth County,658,,,53.61,363.25,84.76
-707,Hillgrove High School,Cobb County,633,1067.00,20.90,66.55,589.13,96.00
-708,Oakland Meadow School,Atlanta Public Schools,667,835.00,16.10,,,
-804,EXCEL Academy,,675,,,,,66.01
-805,Peachtree Ridge High School,Gwinnett County,667,1094.00,22.90,60.75,821.38,87.79
-808,Cobb Horizon High School,,633,,,16.30,,48.92
+707,Hillgrove High School,Cobb County,633,1067,20.9,66.55,589.13,96
+708,Oakland Meadow School,Atlanta Public Schools,667,835,16.1,,,
+805,Peachtree Ridge High School,Gwinnett County,667,1094,22.9,60.75,821.38,87.79
 810,Elizabeth Andrews High School,DeKalb County,644,,,,,14.34
-898,Eastman Youth Development Campus,,891,,,,10.75,
-910,Johns Creek High School,Fulton County,660,1185.00,24.90,80.68,481.13,97.37
-1018,Lanier High School,Gwinnett County,667,1071.00,23.10,60.61,458.13,87.36
-1019,"Gwinnett School of Mathematics, Science and Technology",Gwinnett County,667,1367.00,29.30,85.14,303.13,99.65
+910,Johns Creek High School,Fulton County,660,1185,24.9,80.68,481.13,97.37
+1018,Lanier High School,Gwinnett County,667,1071,23.1,60.61,458.13,87.36
 1050,Brantley County High School,Brantley County,613,986.25,19.45,48.41,317.91,87.27
 1052,Lakeview-Fort Oglethorpe High School,Catoosa County,623,995.25,17.95,38.81,250.81,83.53
-1054,Forest Park High School,Clayton County,631,1035.67,19.20,49.47,507.38,86.31
-1056,Jonesboro High School,Clayton County,631,944.00,16.30,37.74,379.13,85.92
-1058,Monroe High School,Dougherty County,647,861.00,15.60,22.27,267.75,81.93
-1064,McEachern High School,Cobb County,633,901.00,16.60,32.17,393.44,86.74
-1069,Wheeler High School,Cobb County,633,1106.00,23.10,62.22,585.88,87.18
-1070,Tucker High School,DeKalb County,644,967.00,18.60,52.86,386.63,81.48
-1110,Langston Hughes High School,Fulton County,660,882.00,16.30,37.23,487.13,86.34
-1214,Gwinnett Online Campus,,667,,,34.74,,56.45
-1311,VIP Academy (Virtual),,611,,,22.33,,88.24
-1320,Skyview High School,,660,,,,74.25,24.72
-1323,Global Impact Academy,,660,,,,,
-1325,Fulton Academy of Virtual Excellence,,660,,,35.59,,64.52
-1409,D. M. Therrell High School,,761,,,25.27,237.38,83.39
-1410,Mountain View High School,Gwinnett County,667,1083.00,20.70,55.45,572.13,89.16
-1411,B.E.S.T Academy,,761,,,,,93.17
-1412,South Atlanta High School,,761,,,29.23,226.63,86.17
-1413,Carver High School,,761,,,17.58,106.75,77.93
-1552,East Hall High School,Hall County,669,979.00,19.10,36.73,327.63,87.03
-1554,Colquitt County High School,Colquitt County,635,972.00,17.50,42.62,,86.68
-1556,North Hall High School,Hall County,669,1070.00,21.60,58.41,280.75,87.07
-1710,Archer High School,Gwinnett County,667,1061.00,19.80,62.10,776.75,86.57
-1814,Discovery High School,Gwinnett County,667,1022.00,18.10,40.95,693.75,77.61
-1818,Paul Duke STEM High School,,667,,,65.02,304.75,93.25
-1819,McClure Health Science High School,,667,,,49.05,283.38,93.83
-1820,Seckinger High School,,667,,,50.00,409.75,88.60
-1893,Atlanta Area School for the Deaf,,7991893,,,,,
-1894,Georgia Academy for the Blind,State Schools- Georgia Academy for the Blind,7991894,,,,,
-1895,Georgia School for the Deaf,,799,,,,,
-2050,Early County High School,Early County,649,1006.29,19.78,50.08,164.90,92.31
-2052,Central High School,Carroll County,622,974.00,18.18,36.76,322.63,85.12
-2054,Statesboro High School,Bulloch County,616,941.50,17.50,37.15,216.00,78.21
-2055,Druid Hills High School,DeKalb County,644,1030.00,21.50,60.61,338.50,78.91
-2056,North Cobb High School,Cobb County,633,955.50,18.85,43.54,449.06,84.92
-2060,Macon County High School,Macon County,694,880.00,14.10,,83.63,83.69
-2062,Hardaway High School,Muscogee County,706,927.00,16.50,37.13,291.63,88.27
-2066,Osborne High School,Cobb County,633,968.00,17.50,30.87,676.75,74.32
-2552,Paulding County High School,Paulding County,710,1053.00,22.60,46.97,495.38,86.49
-2558,South Gwinnett High School,Gwinnett County,667,975.00,19.10,43.26,653.88,73.57
-2574,Westside High School,Richmond County,721,923.00,16.00,27.27,,81.39
-3050,Bowdon High School,Carroll County,622,1006.60,19.84,46.41,272.56,91.66
+1054,Forest Park High School,Clayton County,631,1035.67,19.2,49.47,507.38,86.31
+1056,Jonesboro High School,Clayton County,631,944,16.3,37.74,379.13,85.92
+1058,Monroe High School,Dougherty County,647,861,15.6,22.27,267.75,81.93
+1064,McEachern High School,Cobb County,633,901,16.6,32.17,393.44,86.74
+1069,Wheeler High School,Cobb County,633,1106,23.1,62.22,585.88,87.18
+1070,Tucker High School,DeKalb County,644,967,18.6,52.86,386.63,81.48
+1110,Langston Hughes High School,Fulton County,660,882,16.3,37.23,487.13,86.34
+1410,Mountain View High School,Gwinnett County,667,1083,20.7,55.45,572.13,89.16
+1552,East Hall High School,Hall County,669,979,19.1,36.73,327.63,87.03
+1554,Colquitt County High School,Colquitt County,635,972,17.5,42.62,,86.68
+1556,North Hall High School,Hall County,669,1070,21.6,58.41,280.75,87.07
+1710,Archer High School,Gwinnett County,667,1061,19.8,62.1,776.75,86.57
+1814,Discovery High School,Gwinnett County,667,1022,18.1,40.95,693.75,77.61
+2050,Early County High School,Early County,649,1006.29,19.78,50.08,164.9,92.31
+2052,Central High School,Carroll County,622,974,18.18,36.76,322.63,85.12
+2054,Statesboro High School,Bulloch County,616,941.5,17.5,37.15,216,78.21
+2055,Druid Hills High School,DeKalb County,644,1030,21.5,60.61,338.5,78.91
+2056,North Cobb High School,Cobb County,633,955.5,18.85,43.54,449.06,84.92
+2060,Macon County High School,Macon County,694,880,14.1,,83.63,83.69
+2062,Hardaway High School,Muscogee County,706,927,16.5,37.13,291.63,88.27
+2066,Osborne High School,Cobb County,633,968,17.5,30.87,676.75,74.32
+2552,Paulding County High School,Paulding County,710,1053,22.6,46.97,495.38,86.49
+2558,South Gwinnett High School,Gwinnett County,667,975,19.1,43.26,653.88,73.57
+2574,Westside High School,Richmond County,721,923,16,27.27,,81.39
+3050,Bowdon High School,Carroll County,622,1006.6,19.84,46.41,272.56,91.66
 3052,Winder-Barrow High School,Barrow County,607,989.25,19.27,43.16,363.67,86.68
-3054,Columbus High School,Muscogee County,706,1006.00,24.90,49.55,250.81,91.27
-3056,Groves High School,Savannah-Chatham County,625,930.50,18.70,32.53,380.44,76.42
-3060,Lakeside High School,DeKalb County,644,1076.00,22.50,67.42,530.25,75.90
-3066,Riverwood International Charter School,Fulton County,660,1045.00,23.50,61.82,429.25,96.59
-3070,McNair High School,DeKalb County,644,908.00,,22.73,181.75,53.25
-3552,Brunswick High School,Glynn County,663,1026.00,18.50,42.93,472.38,92.92
-3556,Johnson Magnet,Richmond County,721,1121.00,21.50,52.31,,100.00
-3750,Central Gwinnett High School,Gwinnett County,667,1013.00,18.90,36.69,587.88,78.53
-3756,Josey High School,Richmond County,721,787.00,,25.17,,62.67
-4050,Evans High School,Columbia County,636,1031.00,19.98,48.58,370.03,86.81
-4052,Portal Middle/High School,Bulloch County,616,1030.00,19.07,51.93,305.88,87.62
-4053,Clarkston High School,DeKalb County,644,862.00,16.00,45.92,348.38,63.25
-4054,Cross Keys High School,DeKalb County,644,980.00,,39.10,425.63,62.02
-4056,Warner Robins High School,Houston County,676,992.00,19.40,41.00,446.38,83.41
-4058,Morrow High School,Clayton County,631,893.00,15.70,32.09,374.19,80.46
-4060,Academy of Richmond County High School,Richmond County,721,961.00,19.00,37.45,280.75,81.45
-4062,Westover High School,Dougherty County,647,970.00,19.35,48.42,327.38,90.85
-4066,Pebblebrook High School,Cobb County,633,978.00,18.80,35.84,617.00,69.99
-4069,Towers High School,DeKalb County,644,889.00,16.60,36.29,187.63,72.71
-4556,North Gwinnett High School,Gwinnett County,667,1176.00,24.40,76.46,773.25,95.36
-4560,Midtown High School,Atlanta Public Schools,761,1088.00,22.90,68.82,398.75,90.75
-4562,Davidson Magnet School,Richmond County,721,1177.00,23.30,77.36,,100.00
-4752,Glynn Academy,Glynn County,663,1044.50,20.65,44.82,381.94,89.86
+3054,Columbus High School,Muscogee County,706,1006,24.9,49.55,250.81,91.27
+3056,Groves High School,Savannah-Chatham County,625,930.5,18.7,32.53,380.44,76.42
+3060,Lakeside High School,DeKalb County,644,1076,22.5,67.42,530.25,75.9
+3070,McNair High School,DeKalb County,644,908,,22.73,181.75,53.25
+3552,Brunswick High School,Glynn County,663,1026,18.5,42.93,472.38,92.92
+3750,Central Gwinnett High School,Gwinnett County,667,1013,18.9,36.69,587.88,78.53
+3756,Josey High School,Richmond County,721,787,,25.17,,62.67
+4050,Evans High School,Columbia County,636,1031,19.98,48.58,370.03,86.81
+4052,Portal Middle/High School,Bulloch County,616,1030,19.07,51.93,305.88,87.62
+4053,Clarkston High School,DeKalb County,644,862,16,45.92,348.38,63.25
+4054,Cross Keys High School,DeKalb County,644,980,,39.1,425.63,62.02
+4056,Warner Robins High School,Houston County,676,992,19.4,41,446.38,83.41
+4058,Morrow High School,Clayton County,631,893,15.7,32.09,374.19,80.46
+4062,Westover High School,Dougherty County,647,970,19.35,48.42,327.38,90.85
+4066,Pebblebrook High School,Cobb County,633,978,18.8,35.84,617,69.99
+4069,Towers High School,DeKalb County,644,889,16.6,36.29,187.63,72.71
+4556,North Gwinnett High School,Gwinnett County,667,1176,24.4,76.46,773.25,95.36
+4560,Midtown High School,Atlanta Public Schools,761,1088,22.9,68.82,398.75,90.75
 5050,Cherokee High School,Cherokee County,628,1036.86,20.37,52.25,515.81,88.03
-5052,Chamblee High School,DeKalb County,644,1038.00,19.95,51.43,332.88,82.82
-5054,Villa Rica High School,Carroll County,622,1017.00,19.60,53.96,508.56,93.10
-5055,Dunwoody High School,DeKalb County,644,1074.00,23.50,65.74,506.75,84.51
-5060,Jenkins High School,Savannah-Chatham County,625,1031.00,21.70,34.02,274.38,89.16
-5062,Jordan Vocational High School,Muscogee County,706,937.00,17.90,24.86,214.38,94.57
-5067,Southwest DeKalb High School,DeKalb County,644,942.00,18.00,32.31,322.00,88.37
-5069,Westlake High School,Fulton County,660,970.00,19.00,42.50,588.50,87.69
-5070,Windsor Forest High School,Savannah-Chatham County,625,880.00,,26.87,243.63,85.20
-5550,Duluth High School,Gwinnett County,667,1072.00,21.40,55.12,655.75,85.23
-5556,Clarke Central High School,Clarke County,629,1005.00,19.40,50.42,450.25,75.66
-5566,Laney High School,Richmond County,721,913.00,15.70,17.21,,73.24
+5052,Chamblee High School,DeKalb County,644,1038,19.95,51.43,332.88,82.82
+5054,Villa Rica High School,Carroll County,622,1017,19.6,53.96,508.56,93.1
+5055,Dunwoody High School,DeKalb County,644,1074,23.5,65.74,506.75,84.51
+5060,Jenkins High School,Savannah-Chatham County,625,1031,21.7,34.02,274.38,89.16
+5062,Jordan Vocational High School,Muscogee County,706,937,17.9,24.86,214.38,94.57
+5067,Southwest DeKalb High School,DeKalb County,644,942,18,32.31,322,88.37
+5069,Westlake High School,Fulton County,660,970,19,42.5,588.5,87.69
+5070,Windsor Forest High School,Savannah-Chatham County,625,880,,26.87,243.63,85.2
+5550,Duluth High School,Gwinnett County,667,1072,21.4,55.12,655.75,85.23
+5556,Clarke Central High School,Clarke County,629,1005,19.4,50.42,450.25,75.66
+5566,Laney High School,Richmond County,721,913,15.7,17.21,,73.24
