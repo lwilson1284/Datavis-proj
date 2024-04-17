@@ -67,8 +67,6 @@ function fetchHousingData() {
 }
 
 function fetchSchoolData() {
-    // This function should be similar to fetchHousingData but for school data
-    // Placeholder logic is provided here, needs to be implemented similarly
     fetch('../school_data.csv')
         .then(response => response.text())
         .then(csvData => {
