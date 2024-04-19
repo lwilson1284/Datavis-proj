@@ -118,27 +118,51 @@ sliders.forEach(slider => {
             fetchHousingData();
         } else if (sliderId === 'satScores' || sliderId === 'hopeEligibility' || sliderId === 'graduationRate') {
             fetchSchoolData();
+            if (document.getElementById('showSchoolsBtn').classList.contains('active')) {
+                loadSchoolLocations();
+            }
         }
     });
 });
 
 function loadSchoolLocations() {
-    d3.csv("../data/school_coords.csv").then(data => {
-        const schoolsGroup = svg.append("g").attr("class", "schools");
+    Promise.all([
+        d3.csv("../data/school_coords.csv"),
+        d3.csv("../school_data.csv")
+    ]).then(([coords, data]) => {
+        const filteredSchools = data.filter(d => 
+            parseInt(d['SAT_AVG_SCORE']) >= parseInt(satScores.value) &&
+            parseInt(d['HOPE_ELIGIBLE_PCT']) >= parseInt(hopeEligibility.value) &&
+            parseInt(d['PROGRAM_PERCENT']) >= parseInt(graduationRate.value)
+        );
+        
+        const filteredCoords = coords.filter(coord => 
+            filteredSchools.some(school => school['INSTN_NAME_x'] === coord['School name'])
+        );
 
-        schoolsGroup.selectAll("image")
-            .data(data)
-            .enter()
-            .append("image")
-            .attr("xlink:href", "../school-icon.png") 
+        let schoolsGroup = svg.select(".schools");
+        if (schoolsGroup.empty()) {
+            schoolsGroup = svg.append("g").attr("class", "schools");
+        } else {
+            schoolsGroup.selectAll("*").remove();
+        }
+
+        const schools = schoolsGroup.selectAll("image")
+            .data(filteredCoords, d => d['School name']);
+
+        schools.enter().append("image")
+            .attr("xlink:href", "../school-icon.png")
             .attr("width", 20)
             .attr("height", 20)
             .attr("transform", d => {
                 const coords = projection([+d.Longitude, +d.Latitude]);
                 return `translate(${coords[0] - 10}, ${coords[1] - 10})`;
             });
+
+        schools.exit().remove();
     });
 }
+
 
 function showSchools() {
     const schoolsGroup = svg.select(".schools");
@@ -161,8 +185,6 @@ function showSchools() {
     document.getElementById('data-container').style.display = 'none';
     document.getElementById('data-container2').style.display = 'block';
 }
-
-
 
 window.addEventListener('load', () => {
     initMap();
