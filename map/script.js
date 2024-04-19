@@ -5,7 +5,7 @@ const sliderValues = document.querySelectorAll('.slider-value');
 
 const housePrice = document.getElementById('housePrice');
 const satScores = document.getElementById('satScores');
-const hopeEligibilty = document.getElementById('hopeEligibilty');
+const hopeEligibility = document.getElementById('hopeEligibility');
 const graduationRate = document.getElementById('graduationRate');
 
 const svg = d3.select("#map").append("svg")
@@ -83,7 +83,11 @@ function fetchSchoolData() {
             });
 
             data.forEach(row => {
-                if (parseInt(row.SAT_AVG_SCORE) >= parseInt(satScores.value)) {
+                if (parseInt(row.SAT_AVG_SCORE) >= parseInt(satScores.value) && 
+                    parseInt(row.HOPE_ELIGIBLE_PCT) >= parseInt(hopeEligibility.value) &&
+                    parseInt(row.PROGRAM_PERCENT) >= parseInt(graduationRate.value)
+
+                    ) {
                     const rowElement = table.insertRow();
                     [row.INSTN_NAME_x, row.SCHOOL_DSTRCT_NM_SAT, row.SAT_AVG_SCORE, `${row.HOPE_ELIGIBLE_PCT}%`, `${row.PROGRAM_PERCENT}%`].forEach(cellText => {
                         const cell = rowElement.insertCell();
@@ -112,7 +116,7 @@ sliders.forEach(slider => {
 
         if (sliderId === 'housePrice') {
             fetchHousingData();
-        } else if (sliderId === 'satScores' || sliderId === 'hopeEligibilty' || sliderId === 'graduationRate') {
+        } else if (sliderId === 'satScores' || sliderId === 'hopeEligibility' || sliderId === 'graduationRate') {
             fetchSchoolData();
         }
     });
